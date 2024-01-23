@@ -4,5 +4,6 @@
 format: jb-book
 root: about
 chapters:
+- file: landscape
 - file: CONTRIBUTING
 - file: CODE_OF_CONDUCT

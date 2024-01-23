@@ -1,0 +1,990 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>DEI Resource Landscape &#8212; SustainOSS DEI Handbook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'landscape';</script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Contributing" href="CONTRIBUTING.html" />
+    <link rel="prev" title="About" href="about.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="about.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.svg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.svg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="about.html">
+                    About
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">DEI Resource Landscape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CONTRIBUTING.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CODE_OF_CONDUCT.html">Code of Conduct</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/sustainers/dei-hanbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/sustainers/dei-hanbook/issues/new?title=Issue%20on%20page%20%2Flandscape.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/landscape.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>DEI Resource Landscape</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-and-getting-started-with-dei">Understanding and Getting Started with DEI</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diversity-equity-inclusion-and-access-101">Diversity, Equity, Inclusion, and Access 101</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#open-demographics-documentation">Open Demographics documentation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dei-guide-and-best-practices">DEI guide and best practices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-complete-guide-to-dei-initiatives">The Complete Guide to DEI Initiatives</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diversity-equity-and-inclusion-dei-training">Diversity, Equity and Inclusion (DEI) Training</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dei-principles-standards-and-frameworks">DEI Principles, Standards and Frameworks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numfocus-discover-cookbook">NumFOCUS DISCOVER Cookbook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contributor-convenant">Contributor convenant</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chaoss-metrics">CHAOSS Metrics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#open-source-conduct">Open Source Conduct</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dei-initiatives-and-programs">DEI Initiatives and programs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chaos-dei-badging">CHAOS DEI Badging</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hidden-disabilities-sunflower">Hidden Disabilities  Sunflower</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purple-tuesday">Purple Tuesday</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inclusive-naming">Inclusive Naming</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a11y-project">A11Y Project</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#open-source-for-equality">Open Source for Equality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#signdict">SignDict</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a11y-talks">A11Y Talks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wheelmap">Wheelmap</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communities-groups">Communities &amp; Groups</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fedora-project-dei-team">Fedora Project DEI Team</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-in-open-source">All In Open source</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#women-of-open-source">Women of Open Source</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deaf-hard-of-hearing-working-group">Deaf &amp; Hard of Hearing Working Group</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chayn">Chayn</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#supernova">SUPERNOVA</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pride-in-stem">Pride in STEM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#out-in-tech">Out in Tech</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dei-resources-articles">DEI Resources &amp; Articles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#open-source-diversity">Open Source Diversity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-spoon-theory">The Spoon Theory</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-repo-with-useful-diversity-guidelines">Github Repo with useful Diversity guidelines</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gov-uk-inclusive-language">Gov.UK inclusive language</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gov-uk-posters">Gov.UK Posters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anti-racism-reading-list">Anti-racism-reading-list</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#floss-at-geek-feminism">FLOSS at Geek Feminism</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dei-research-case-studies-and-success-stories">DEI Research, Case Studies and Success Stories</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diversity-equity-and-inclusion-lighthouses-2023">Diversity, Equity and Inclusion Lighthouses 2023</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-foundation-diversity-equity-and-inclusion-in-open-source-2021-report">Linux Foundation Diversity, Equity, and Inclusion in Open Source 2021 report</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-state-of-diversity-and-inclusion-in-the-asf-community">The State Of Diversity And Inclusion In The ASF Community</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#world-s-most-accessible-websites">World’s most accessible websites</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chaoss-dei-metrics-research">CHAOSS DEI metrics research</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mentorships-and-scholarships">Mentorships and Scholarships</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lift-scholarship">LiFT scholarship</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outreachy">Outreachy</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grants-and-support">Grants and Support</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#american-philosophical-association-diversity-and-inclusion-grant">American Philosophical Association diversity and Inclusion grant</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="dei-resource-landscape">
+<h1>DEI Resource Landscape<a class="headerlink" href="#dei-resource-landscape" title="Permalink to this heading">#</a></h1>
+<section id="table-of-contents">
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this heading">#</a></h2>
+<!-- TODO Should autolink these -->
+<ul class="simple">
+<li><p>Understanding and Getting Started with DEI</p></li>
+<li><p>DEI Principles, Standards and Frameworks</p></li>
+<li><p>DEI Initiatives and programs</p></li>
+<li><p>Communities &amp; Groups</p></li>
+<li><p>DEI Resources &amp; Articles</p></li>
+<li><p>DEI Research, Case Studies and Success Stories</p></li>
+<li><p>Mentorships and Scholarships</p></li>
+<li><p>Grants and Support</p></li>
+</ul>
+</section>
+<section id="understanding-and-getting-started-with-dei">
+<h2>Understanding and Getting Started with DEI<a class="headerlink" href="#understanding-and-getting-started-with-dei" title="Permalink to this heading">#</a></h2>
+<section id="diversity-equity-inclusion-and-access-101">
+<h3>Diversity, Equity, Inclusion, and Access 101<a class="headerlink" href="#diversity-equity-inclusion-and-access-101" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status:</p></li>
+<li><p>Link: <a class="reference external" href="https://www.ucdenver.edu/offices/equity/education-training/self-guided-learning/diversity-equity-and-inclusion-101">https://www.ucdenver.edu/offices/equity/education-training/self-guided-learning/diversity-equity-and-inclusion-101</a></p></li>
+<li><p>Brief Description: A self training educational guide that introduces DEI and other interconnected terminologies.</p></li>
+</ul>
+</section>
+<section id="open-demographics-documentation">
+<h3>Open Demographics documentation<a class="headerlink" href="#open-demographics-documentation" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Sleeping</p></li>
+<li><p>Link: <a class="reference external" href="https://nikkistevens.com/open-demographics/">https://nikkistevens.com/open-demographics/</a></p></li>
+<li><p>Brief Description: This repository is designed for communities, particularly open-source ones, seeking information about the demographic composition of their members.</p></li>
+</ul>
+</section>
+<section id="dei-guide-and-best-practices">
+<h3>DEI guide and best practices<a class="headerlink" href="#dei-guide-and-best-practices" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: N/A</p></li>
+<li><p>Link: <a class="reference external" href="https://nlnet.nl/NGI0/bestpractices/DiversityAndInclusionGuide-v4.pdf">https://nlnet.nl/NGI0/bestpractices/DiversityAndInclusionGuide-v4.pdf</a></p></li>
+<li><p>Brief Description: Netherlands Net Foundation guidelines to increase diversity.</p></li>
+</ul>
+</section>
+<section id="the-complete-guide-to-dei-initiatives">
+<h3>The Complete Guide to DEI Initiatives<a class="headerlink" href="#the-complete-guide-to-dei-initiatives" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status:</p></li>
+<li><p>Link: <a class="reference external" href="https://www.cooleaf.com/guides/guide-to-dei">https://www.cooleaf.com/guides/guide-to-dei</a></p></li>
+<li><p>Brief Description: A guide that describes</p></li>
+</ul>
+</section>
+<section id="diversity-equity-and-inclusion-dei-training">
+<h3>Diversity, Equity and Inclusion (DEI) Training<a class="headerlink" href="#diversity-equity-and-inclusion-dei-training" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status:</p></li>
+<li><p>Link: <a class="reference external" href="https://www.hipeople.io/blog/diversity-equity-inclusion-dei-training">https://www.hipeople.io/blog/diversity-equity-inclusion-dei-training</a></p></li>
+<li><p>Brief Description: This guide is your comprehensive resource to understand the intricacies DEI training</p></li>
+</ul>
+</section>
+</section>
+<section id="dei-principles-standards-and-frameworks">
+<h2>DEI Principles, Standards and Frameworks<a class="headerlink" href="#dei-principles-standards-and-frameworks" title="Permalink to this heading">#</a></h2>
+<section id="numfocus-discover-cookbook">
+<h3>NumFOCUS DISCOVER Cookbook<a class="headerlink" href="#numfocus-discover-cookbook" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link: <a class="reference external" href="https://discover-cookbook.numfocus.org/intro.html">https://discover-cookbook.numfocus.org/intro.html</a></p></li>
+<li><p>Brief Description: A guide for organizing more diverse and inclusive events and conferences</p></li>
+</ul>
+</section>
+<section id="contributor-convenant">
+<h3>Contributor convenant<a class="headerlink" href="#contributor-convenant" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status:</p></li>
+<li><p>Link: <a class="reference external" href="https://www.contributor-covenant.org/version/2/0/code_of_conduct/">https://www.contributor-covenant.org/version/2/0/code_of_conduct/</a></p></li>
+<li><p>Brief Description:</p></li>
+</ul>
+</section>
+<section id="chaoss-metrics">
+<h3>CHAOSS Metrics<a class="headerlink" href="#chaoss-metrics" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link: <a class="reference external" href="https://chaoss.community/kb-metrics-and-metrics-models/">https://chaoss.community/kb-metrics-and-metrics-models/</a></p></li>
+<li><p>Brief Description: A set of standards that can be used to define open source community health</p></li>
+</ul>
+</section>
+<section id="open-source-conduct">
+<h3>Open Source Conduct<a class="headerlink" href="#open-source-conduct" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: active, CC BY-NC license, looking for contributors</p></li>
+<li><p>Link: <a class="reference external" href="https://opensourceconduct.com/">https://opensourceconduct.com/</a></p></li>
+<li><p>Brief Description: Overview of importance of CoCs in open source, and links to major project CoC policies (and where derived from)</p></li>
+</ul>
+</section>
+</section>
+<section id="dei-initiatives-and-programs">
+<h2>DEI Initiatives and programs<a class="headerlink" href="#dei-initiatives-and-programs" title="Permalink to this heading">#</a></h2>
+<section id="chaos-dei-badging">
+<h3>CHAOS DEI Badging<a class="headerlink" href="#chaos-dei-badging" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link: <a class="reference external" href="https://badging.chaoss.community/">https://badging.chaoss.community/</a></p></li>
+<li><p>Brief Description:</p></li>
+</ul>
+</section>
+<section id="hidden-disabilities-sunflower">
+<h3>Hidden Disabilities  Sunflower<a class="headerlink" href="#hidden-disabilities-sunflower" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link: <a class="reference external" href="https://hdsunflower.com/">https://hdsunflower.com/</a></p></li>
+<li><p>Brief Description: Community and company that spread awareness about hidden disabilities by using a “sunflower” badge</p></li>
+</ul>
+</section>
+<section id="purple-tuesday">
+<h3>Purple Tuesday<a class="headerlink" href="#purple-tuesday" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link: <a class="reference external" href="https://purpletuesday.co/">https://purpletuesday.co/</a></p></li>
+<li><p>Brief Description: A global social movement and the #1 brand for improving the customer experience for disabled people and their families 365 days a year.</p></li>
+</ul>
+</section>
+<section id="inclusive-naming">
+<h3>Inclusive Naming<a class="headerlink" href="#inclusive-naming" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link: <a class="reference external" href="https://inclusivenaming.org/">https://inclusivenaming.org/</a></p></li>
+<li><p>Brief Description: A cross-organisation effort to promote and facilitate replacing harmful and exclusionary language in information technology</p></li>
+</ul>
+</section>
+<section id="a11y-project">
+<h3>A11Y Project<a class="headerlink" href="#a11y-project" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link:<a class="reference external" href="https://www.a11yproject.com/">https://www.a11yproject.com/</a></p></li>
+<li><p>Brief Description: The A11Y Project is a community-driven effort to make digital accessibility easier.</p></li>
+</ul>
+</section>
+<section id="open-source-for-equality">
+<h3>Open Source for Equality<a class="headerlink" href="#open-source-for-equality" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link: <a class="reference external" href="https://www.oseq.org/">https://www.oseq.org/</a></p></li>
+<li><p>Brief Description:  Open Source for Equality is a global initiative to promote the development and use of free and open software that bridges the digital gender gap</p></li>
+</ul>
+</section>
+<section id="signdict">
+<h3>SignDict<a class="headerlink" href="#signdict" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link: <a class="reference external" href="https://signdict.org/">https://signdict.org/</a></p></li>
+<li><p>Brief Description: A crowdsourced sign language dictionary</p></li>
+</ul>
+</section>
+<section id="a11y-talks">
+<h3>A11Y Talks<a class="headerlink" href="#a11y-talks" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status:</p></li>
+<li><p>Link: <a class="reference external" href="https://a11ytalks.com/">https://a11ytalks.com/</a></p></li>
+<li><p>Brief Description: A11yTalks seeks to bridge the gap between developers and accessibility professionals by providing a friendly, safe environment.</p></li>
+</ul>
+</section>
+<section id="wheelmap">
+<h3>Wheelmap<a class="headerlink" href="#wheelmap" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link: <a class="reference external" href="https://wheelmap.org/">https://wheelmap.org/</a></p></li>
+<li><p>Brief Description: Wheelmap is a worldwide map for finding and marking wheelchair accessible places.</p></li>
+</ul>
+</section>
+</section>
+<section id="communities-groups">
+<h2>Communities &amp; Groups<a class="headerlink" href="#communities-groups" title="Permalink to this heading">#</a></h2>
+<section id="fedora-project-dei-team">
+<h3>Fedora Project DEI Team<a class="headerlink" href="#fedora-project-dei-team" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link: <a class="reference external" href="https://docs.fedoraproject.org/en-US/dei/">https://docs.fedoraproject.org/en-US/dei/</a></p></li>
+<li><p>Brief Description: The Fedora Diversity, Equity, &amp; Inclusion (DEI) Team encourages, supports, and enables DEI in the Fedora community. We work with the community to create an environment where everyone feels empowered to be a part of and contribute to the Fedora Project.</p></li>
+</ul>
+</section>
+<section id="all-in-open-source">
+<h3>All In Open source<a class="headerlink" href="#all-in-open-source" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link: <a class="reference external" href="https://allinopensource.org/">https://allinopensource.org/</a></p></li>
+<li><p>Brief Description: A community dedicated to advancing diversity, equity, and inclusion within open source.</p></li>
+</ul>
+</section>
+<section id="women-of-open-source">
+<h3>Women of Open Source<a class="headerlink" href="#women-of-open-source" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link: <a class="reference external" href="https://womenofopensource.org/">https://womenofopensource.org/</a></p></li>
+<li><p>Brief Description:  This community is offered to both cis and trans women and non-binary and gender-nonconforming people who are comfortable in a space that centres women.</p></li>
+</ul>
+</section>
+<section id="deaf-hard-of-hearing-working-group">
+<h3>Deaf &amp; Hard of Hearing Working Group<a class="headerlink" href="#deaf-hard-of-hearing-working-group" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link: <a class="reference external" href="https://contribute.cncf.io/about/deaf-and-hard-of-hearing/">https://contribute.cncf.io/about/deaf-and-hard-of-hearing/</a></p></li>
+<li><p>Brief Description:  A CNCF initiative that aims to empower and include individuals who are deaf or hard of hearing in the cloud native and open source communities.</p></li>
+</ul>
+</section>
+<section id="chayn">
+<h3>Chayn<a class="headerlink" href="#chayn" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status:</p></li>
+<li><p>Link: <a class="reference external" href="https://www.chayn.co/">https://www.chayn.co/</a></p></li>
+<li><p>Brief Description: A volunteer network tackling gender based violence globally by creating intersectional survivor-led resources on the web</p></li>
+</ul>
+</section>
+<section id="supernova">
+<h3>SUPERNOVA<a class="headerlink" href="#supernova" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status:</p></li>
+<li><p>Link: <a class="reference external" href="http://supernovaproject.org/">http://supernovaproject.org/</a></p></li>
+<li><p>Brief Description: A global effort that aims to contribute to addressing abuse within the LGBTQIA+  communities</p></li>
+</ul>
+</section>
+<section id="pride-in-stem">
+<h3>Pride in STEM<a class="headerlink" href="#pride-in-stem" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link: <a class="reference external" href="https://prideinstem.org/">https://prideinstem.org/</a></p></li>
+<li><p>Brief Description: A charity run by an independent group of LGBTQIA+ scientists &amp; engineers from around the world.</p></li>
+</ul>
+</section>
+<section id="out-in-tech">
+<h3>Out in Tech<a class="headerlink" href="#out-in-tech" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link: <a class="reference external" href="https://outintech.com/">https://outintech.com/</a></p></li>
+<li><p>Brief Description: A community that  unites the LGBTQ+ tech community.</p></li>
+</ul>
+</section>
+</section>
+<section id="dei-resources-articles">
+<h2>DEI Resources &amp; Articles<a class="headerlink" href="#dei-resources-articles" title="Permalink to this heading">#</a></h2>
+<section id="open-source-diversity">
+<h3>Open Source Diversity<a class="headerlink" href="#open-source-diversity" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Sleeping</p></li>
+<li><p>Link: <a class="reference external" href="https://opensourcediversity.org/">https://opensourcediversity.org/</a></p></li>
+<li><p>Brief Description:  A site that curate resource on diversity &amp; inclusion in free &amp; open source software communities</p></li>
+</ul>
+</section>
+<section id="the-spoon-theory">
+<h3>The Spoon Theory<a class="headerlink" href="#the-spoon-theory" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: N/A</p></li>
+<li><p>Link: <a class="reference external" href="https://butyoudontlooksick.com/articles/written-by-christine/the-spoon-theory/">https://butyoudontlooksick.com/articles/written-by-christine/the-spoon-theory/</a></p></li>
+<li><p>Brief Description: The Spoon Theory. “Spoon Theory”, or “But you don’t look sick?” A project to increase awarenes about hidden disabilities</p></li>
+</ul>
+</section>
+<section id="github-repo-with-useful-diversity-guidelines">
+<h3>Github Repo with useful Diversity guidelines<a class="headerlink" href="#github-repo-with-useful-diversity-guidelines" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Sleeping</p></li>
+<li><p>Link: <a class="github reference external" href="https://github.com/hcorona/diversity-inclusion">hcorona/diversity-inclusion</a></p></li>
+<li><p>Brief Description: A  repository  that collects the guideliness and ideas to run more inclusive and diverse conferences</p></li>
+</ul>
+</section>
+<section id="gov-uk-inclusive-language">
+<h3><a class="reference external" href="http://Gov.UK">Gov.UK</a> inclusive language<a class="headerlink" href="#gov-uk-inclusive-language" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link: <a class="reference external" href="https://www.gov.uk/government/publications/inclusive-communication/inclusive-language-words-to-use-and-avoid-when-writing-about-disability">https://www.gov.uk/government/publications/inclusive-communication/inclusive-language-words-to-use-and-avoid-when-writing-about-disability</a></p></li>
+<li><p>Brief Description: Inclusive language</p></li>
+</ul>
+</section>
+<section id="gov-uk-posters">
+<h3><a class="reference external" href="http://Gov.UK">Gov.UK</a> Posters<a class="headerlink" href="#gov-uk-posters" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link: <a class="github reference external" href="https://github.com/UKHomeOffice/posters/tree/master/accessibility">UKHomeOffice/posters</a></p></li>
+<li><p>Brief Description: Useful posters about Do and Dont’s about accessibility</p></li>
+</ul>
+</section>
+<section id="anti-racism-reading-list">
+<h3>Anti-racism-reading-list<a class="headerlink" href="#anti-racism-reading-list" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status:</p></li>
+<li><p>Link:  <a class="github reference external" href="https://github.com/shiffman/anti-racism-reading-list">shiffman/anti-racism-reading-list</a></p></li>
+<li><p>Brief Description:</p></li>
+</ul>
+</section>
+<section id="floss-at-geek-feminism">
+<h3>FLOSS at Geek Feminism<a class="headerlink" href="#floss-at-geek-feminism" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status:</p></li>
+<li><p>Link: <a class="reference external" href="https://geekfeminism.fandom.com/wiki/FLOSS">https://geekfeminism.fandom.com/wiki/FLOSS</a></p></li>
+<li><p>Brief Description: A wiki page with curated list of resource on women in free and open source software.</p></li>
+</ul>
+</section>
+</section>
+<section id="dei-research-case-studies-and-success-stories">
+<h2>DEI Research, Case Studies and Success Stories<a class="headerlink" href="#dei-research-case-studies-and-success-stories" title="Permalink to this heading">#</a></h2>
+<section id="diversity-equity-and-inclusion-lighthouses-2023">
+<h3>Diversity, Equity and Inclusion Lighthouses 2023<a class="headerlink" href="#diversity-equity-and-inclusion-lighthouses-2023" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status:</p></li>
+<li><p>Link: <a class="reference external" href="https://www.mckinsey.com/featured-insights/diversity-and-inclusion/diversity-equity-and-inclusion-lighthouses-2023">https://www.mckinsey.com/featured-insights/diversity-and-inclusion/diversity-equity-and-inclusion-lighthouses-2023</a></p></li>
+<li><p>Brief Description:</p></li>
+</ul>
+</section>
+<section id="linux-foundation-diversity-equity-and-inclusion-in-open-source-2021-report">
+<h3>Linux Foundation Diversity, Equity, and Inclusion in Open Source 2021 report<a class="headerlink" href="#linux-foundation-diversity-equity-and-inclusion-in-open-source-2021-report" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status:</p></li>
+<li><p>Link: <a class="reference external" href="https://www.linuxfoundation.org/research/the-2021-linux-foundation-report-on-diversity-equity-and-inclusion-in-open-source">https://www.linuxfoundation.org/research/the-2021-linux-foundation-report-on-diversity-equity-and-inclusion-in-open-source</a></p></li>
+<li><p>Brief Description: This a research report from the Linux foundations on the Diversity, equity, and inclusion (DEI) in the technology industry — and within open source specifically.</p></li>
+</ul>
+</section>
+<section id="the-state-of-diversity-and-inclusion-in-the-asf-community">
+<h3>The State Of Diversity And Inclusion In The ASF Community<a class="headerlink" href="#the-state-of-diversity-and-inclusion-in-the-asf-community" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Completed</p></li>
+<li><p>Link:  <a class="reference external" href="https://news.apache.org/foundation/entry/the-state-of-diversity-and-inclusion-in-the-asf-community-a-pulse-check">https://news.apache.org/foundation/entry/the-state-of-diversity-and-inclusion-in-the-asf-community-a-pulse-check</a></p></li>
+<li><p>Brief Description: This is a report from the Apache Software Foundation’s 2023 research on diversity and inclusion in its community</p></li>
+</ul>
+</section>
+<section id="world-s-most-accessible-websites">
+<h3>World’s most accessible websites<a class="headerlink" href="#world-s-most-accessible-websites" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link: <a class="reference external" href="https://www.tooltester.com/en/blog/accessible-websites/">https://www.tooltester.com/en/blog/accessible-websites/</a></p></li>
+<li><p>Brief Description:</p></li>
+</ul>
+</section>
+<section id="chaoss-dei-metrics-research">
+<h3>CHAOSS DEI metrics research<a class="headerlink" href="#chaoss-dei-metrics-research" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status:Completed</p></li>
+<li><p>Link: <a class="reference external" href="https://chaoss.community/unveiling-the-impact-dei-metrics-overcoming-social-barriers-in-open-source/">https://chaoss.community/unveiling-the-impact-dei-metrics-overcoming-social-barriers-in-open-source/</a></p></li>
+<li><p>Brief Description</p></li>
+</ul>
+</section>
+</section>
+<section id="mentorships-and-scholarships">
+<h2>Mentorships and Scholarships<a class="headerlink" href="#mentorships-and-scholarships" title="Permalink to this heading">#</a></h2>
+<section id="lift-scholarship">
+<h3>LiFT scholarship<a class="headerlink" href="#lift-scholarship" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link: <a class="reference external" href="https://www.linuxfoundation.org/about/lift-scholarships">https://www.linuxfoundation.org/about/lift-scholarships</a></p></li>
+<li><p>Brief Description</p></li>
+</ul>
+</section>
+<section id="outreachy">
+<h3>Outreachy<a class="headerlink" href="#outreachy" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Active</p></li>
+<li><p>Link:  <a class="reference external" href="https://www.outreachy.org/">https://www.outreachy.org/</a></p></li>
+<li><p>Brief Description: A 3 months internships for people subject to systemic bias and impacted by underrepresentation in the technical industry where they are living.</p></li>
+</ul>
+</section>
+</section>
+<section id="grants-and-support">
+<h2>Grants and Support<a class="headerlink" href="#grants-and-support" title="Permalink to this heading">#</a></h2>
+<section id="american-philosophical-association-diversity-and-inclusion-grant">
+<h3>American Philosophical Association diversity and Inclusion grant<a class="headerlink" href="#american-philosophical-association-diversity-and-inclusion-grant" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Project Status: Annual</p></li>
+<li><p>Link: <a class="reference external" href="https://www.apaonline.org/page/diversity_fund">https://www.apaonline.org/page/diversity_fund</a></p></li>
+<li><p>Brief Description: The American Philosophical Association (APA) allocates funds to support projects aligned with its mission and commitment to addressing the significant demographic diversity gap in philosophy. The funding is dedicated to initiatives that aim to enhance the representation and involvement of women, racial and ethnic minorities, LGBTQ+ individuals, people with disabilities, and those with low socioeconomic status within the field of philosophy at all levels.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="about.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">About</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="CONTRIBUTING.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Contributing</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-and-getting-started-with-dei">Understanding and Getting Started with DEI</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diversity-equity-inclusion-and-access-101">Diversity, Equity, Inclusion, and Access 101</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#open-demographics-documentation">Open Demographics documentation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dei-guide-and-best-practices">DEI guide and best practices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-complete-guide-to-dei-initiatives">The Complete Guide to DEI Initiatives</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diversity-equity-and-inclusion-dei-training">Diversity, Equity and Inclusion (DEI) Training</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dei-principles-standards-and-frameworks">DEI Principles, Standards and Frameworks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numfocus-discover-cookbook">NumFOCUS DISCOVER Cookbook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contributor-convenant">Contributor convenant</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chaoss-metrics">CHAOSS Metrics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#open-source-conduct">Open Source Conduct</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dei-initiatives-and-programs">DEI Initiatives and programs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chaos-dei-badging">CHAOS DEI Badging</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hidden-disabilities-sunflower">Hidden Disabilities  Sunflower</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purple-tuesday">Purple Tuesday</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inclusive-naming">Inclusive Naming</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a11y-project">A11Y Project</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#open-source-for-equality">Open Source for Equality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#signdict">SignDict</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a11y-talks">A11Y Talks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wheelmap">Wheelmap</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communities-groups">Communities &amp; Groups</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fedora-project-dei-team">Fedora Project DEI Team</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-in-open-source">All In Open source</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#women-of-open-source">Women of Open Source</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deaf-hard-of-hearing-working-group">Deaf &amp; Hard of Hearing Working Group</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chayn">Chayn</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#supernova">SUPERNOVA</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pride-in-stem">Pride in STEM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#out-in-tech">Out in Tech</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dei-resources-articles">DEI Resources &amp; Articles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#open-source-diversity">Open Source Diversity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-spoon-theory">The Spoon Theory</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-repo-with-useful-diversity-guidelines">Github Repo with useful Diversity guidelines</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gov-uk-inclusive-language">Gov.UK inclusive language</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gov-uk-posters">Gov.UK Posters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anti-racism-reading-list">Anti-racism-reading-list</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#floss-at-geek-feminism">FLOSS at Geek Feminism</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dei-research-case-studies-and-success-stories">DEI Research, Case Studies and Success Stories</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diversity-equity-and-inclusion-lighthouses-2023">Diversity, Equity and Inclusion Lighthouses 2023</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-foundation-diversity-equity-and-inclusion-in-open-source-2021-report">Linux Foundation Diversity, Equity, and Inclusion in Open Source 2021 report</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-state-of-diversity-and-inclusion-in-the-asf-community">The State Of Diversity And Inclusion In The ASF Community</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#world-s-most-accessible-websites">World’s most accessible websites</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chaoss-dei-metrics-research">CHAOSS DEI metrics research</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mentorships-and-scholarships">Mentorships and Scholarships</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lift-scholarship">LiFT scholarship</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outreachy">Outreachy</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grants-and-support">Grants and Support</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#american-philosophical-association-diversity-and-inclusion-grant">American Philosophical Association diversity and Inclusion grant</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By SustainOSS DEI Working Group
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
