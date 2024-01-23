@@ -16,14 +16,6 @@ At its heart, this is a simple [Jupyter Notebook](https://jupyterbook.org/en/sta
 
 This website is run by  on [GitHub Pages](https://pages.github.com/).
 
-## Contributing
-
-Anyone is welcome to submit PRs or open issues. Take a look at our Contributing doc.
-
-## Code of Conduct
-
-All of the work here is done under the SustainOSS [Code of Conduct](https://sustainoss.org/code-of-conduct/). Please read it and abide by it, and report any issues as soon as they come up.
-
 ## License
 
 All of the work here is licensed under an [MIT License](./LICENSE), with the copyright held by the contributors.
