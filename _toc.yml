@@ -2,8 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: about
 chapters:
-- file: about
 - file: CONTRIBUTING
 - file: CODE_OF_CONDUCT

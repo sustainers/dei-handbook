@@ -10,13 +10,15 @@ This document was built by contributors from the SustainOSS DEI Working Group.
 - Open Collective: https://opencollective.com/sustainoss
 - Slack: https://slack.opencollective.com/ on #sustainoss
 
-## This website
+## How to use this website
 
-This website is run by [Jupyter Notebooks](https://jupyterbook.org/en/stable/) on [GitHub Pages](https://pages.github.com/).
+At its heart, this is a simple [Jupyter Notebook](https://jupyterbook.org/en/stable/) that can display information in a structured format. Jupyter Notebooks have a long history of use for documenting software and research methods - there are also other groups, like [The Turing Way](https://the-turing-way.netlify.app/index.html), that use these notebooks for providing resources on how to work collaboratively in the open.
+
+This website is run by  on [GitHub Pages](https://pages.github.com/).
 
 ## Contributing
 
-Anyone is welcome to submit PRs or open issues.
+Anyone is welcome to submit PRs or open issues. Take a look at our Contributing doc.
 
 ## Code of Conduct
 
