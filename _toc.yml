@@ -5,3 +5,5 @@ format: jb-book
 root: intro
 chapters:
 - file: about
+- file: CONTRIBUTING
+- file: CODE_OF_CONDUCT

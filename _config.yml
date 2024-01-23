@@ -4,6 +4,7 @@
 title: SustainOSS DEI Handbook
 author: SustainOSS DEI Working Group
 logo: logo.svg
+exclude_patterns: [README.md]
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
