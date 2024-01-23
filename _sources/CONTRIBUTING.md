@@ -1,4 +1,3 @@
-## Contributing
+# Contributing
 
-Anyone is welcome to submit PRs or open issues. 
-
+Anyone is welcome to submit PRs or open issues.
