@@ -47,6 +47,44 @@
 - Link: https://www.hipeople.io/blog/diversity-equity-inclusion-dei-training
 - Brief Description: This guide is your comprehensive resource to understand the intricacies DEI training
 
+## Code of Conduct Guides
+
+### Getting Started with Codes of Conduct
+
+- Project Status:
+- Link: https://mozillascience.github.io/working-open-workshop/code_of_conduct/ 
+- Brief Description: 
+
+### The Good Doc Project Code of Conduct Templates
+
+- Project Status:
+- Link: https://gitlab.com/tgdp/templates/-/tree/main/code-of-conduct?ref_type=heads 
+- Brief Description: 
+
+### Conference Code of Conduct
+
+- Project Status:
+- Link: https://confcodeofconduct.com/
+- Brief Description: 
+
+### Your Code of Conduct
+
+- Project Status:
+- Link: https://opensource.guide/code-of-conduct/
+- Brief Description: 
+
+### Adding a code of conduct to your project
+
+- Project Status:
+- Link: https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-code-of-conduct-to-your-project
+- Brief Description: 
+
+### Adding a code of conduct to your project
+
+- Project Status:
+- Link: https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-code-of-conduct-to-your-project
+- Brief Description: 
+
 ## DEI Principles, Standards and Frameworks
 
 ### NumFOCUS DISCOVER Cookbook
