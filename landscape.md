@@ -5,6 +5,7 @@
 <!-- TODO Should autolink these -->
 
 - Understanding and Getting Started with DEI
+- Code of Conduct Guides
 - DEI Principles, Standards and Frameworks
 - DEI Initiatives and programs
 - Communities & Groups
