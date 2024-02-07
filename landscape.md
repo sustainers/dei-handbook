@@ -80,10 +80,10 @@
 - Link: https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-code-of-conduct-to-your-project
 - Brief Description: 
 
-### Adding a code of conduct to your project
+### Open Source Project Codes of Conduct
 
 - Project Status:
-- Link: https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-code-of-conduct-to-your-project
+- Link: https://opensourceconduct.com/
 - Brief Description: 
 
 ## DEI Principles, Standards and Frameworks
