@@ -3,7 +3,24 @@
 
 format: jb-book
 root: about
-chapters:
-- file: landscape
-- file: CONTRIBUTING
-- file: CODE_OF_CONDUCT
+parts:
+  - caption: Introduction to DEI
+    chapters:
+    - file: introduction
+    - file: dei_general
+    - file: vectors_dei
+    - file: demograhics
+    - file: landscape
+  - caption: Making the change
+    chapters:
+    - file: inclusive_culture
+    - file: projects_highlight
+    - file: finances_oss
+    - file: decolonization
+    - file: dei_implementation
+    - file: recruitment_hr
+    - file: glossary
+  - caption: Contribute and Code of Conduct
+    chapters:
+    - file: CONTRIBUTING
+    - file: CODE_OF_CONDUCT

@@ -1,0 +1,25 @@
+# DEI Glossary
+(WIP)
+- Belonging
+- Intersectionality
+- Bias
+- Ableism: 
+- Accessibility 
+- Accomplice 
+- Ally: 
+- Cisgender 
+- Cultural Competence 
+- Culture 
+- DIB 
+- DEIA:  
+- Disability: 
+- Discrimination: 
+- Ethnicity
+- Gender Equity
+- Marginalization 
+- Neurodiversity: 
+- Oppression
+- Privilege:
+- Race
+- Stereotype
+- Sexual Orientation
