@@ -6,7 +6,7 @@ root: about
 parts:
   - caption: Introduction to DEI
     chapters:
-    - file: introduction
+    - file: intro
     - file: dei_general
     - file: vectors_dei
     # - file: demographics
