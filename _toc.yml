@@ -9,7 +9,7 @@ parts:
     - file: introduction
     - file: dei_general
     - file: vectors_dei
-    - file: demograhics
+    # - file: demographics
     - file: landscape
   - caption: Making the change
     chapters:
